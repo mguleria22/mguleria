@@ -326,3 +326,13 @@ contract IdentityPrecompilePin {
         completed[msg.sender] = true;
     }
 }
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract KzgPin {
+    mapping(address => bool) public completed;
+
+    function complete() external {
+        completed[msg.sender] = true;
+    }
+}
